@@ -1,0 +1,8 @@
+﻿/.idea/
+/Build/
+/Assets/3rdParty/
+/Library/
+/Temp/
+/obj/
+*.csproj
+*.sln
