@@ -994,7 +994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39bf0d52044647b187fa41ae52105b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startScene: 2
+  _startScene: 3
   _outroTriggerName: Outro
 --- !u!1 &1604931739
 GameObject:

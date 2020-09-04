@@ -30,7 +30,7 @@ namespace UI
         }
 
         [SerializeField]
-        private Scene _startScene = Scene.Map1;
+        private Scene _startScene = Scene.Map2;
 
         [Header( "Animation" )]
         [SerializeField]

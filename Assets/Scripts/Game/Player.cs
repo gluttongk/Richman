@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Security.Authentication.ExtendedProtection;
 using Route;
 using UnityEngine;
 using Zenject;
@@ -10,13 +11,14 @@ public class Player : MonoBehaviour
     private float _movementSpeed = 5f;
 
     [Inject]
-    private IRouteManager _routeManager;
+    private IRouteAdvancedManager _routeManager;
 
     [Inject]
     private DiceRoller _diceRoller;
 
     private int _startingIndex;
     private int _currentIndex;
+    
 
     private void Update()
     {
@@ -26,7 +28,7 @@ public class Player : MonoBehaviour
             Debug.Log( "Rolled " + steps + " step(s)" );
 
             var nextIndex = _currentIndex + steps;
-            nextIndex %= _routeManager.Pads.Count;
+            nextIndex %= _routeManager.PadAdvanceds.Count;
 
             StartCoroutine( Move( steps, nextIndex ) );
         }
@@ -40,7 +42,7 @@ public class Player : MonoBehaviour
             if ( _routeManager.TryGetPadPosition( _currentIndex, out var currentPosition ) )
             {
                 var nextPosition = Vector3.zero;
-                if ( nextIndex >= _routeManager.Pads.Count &&
+                if ( nextIndex >= _routeManager.PadAdvanceds.Count &&
                      _routeManager.TryGetPadPosition( 0, out var position ) )
                 {
                     nextIndex = 0;
@@ -68,5 +70,5 @@ public class Player : MonoBehaviour
         _diceRoller.Roll( out var result );
 
         return result.Results[0];
-    }
+    } 
 }

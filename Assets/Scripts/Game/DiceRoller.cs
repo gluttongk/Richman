@@ -1,5 +1,6 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using Random = UnityEngine.Random;
 
 public readonly struct DiceResult
 {
@@ -15,6 +16,7 @@ public readonly struct DiceResult
 
 public class DiceRoller
 {
+    [Obsolete("Will be refactored")]
     public void Roll( out DiceResult result, int amount = 1, int max = 6 )
     {
         var results = new List<int>();

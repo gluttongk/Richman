@@ -48,3 +48,5 @@ MonoBehaviour:
     Name: Home
   - Scene: 2
     Name: Loop1
+  - Scene: 3
+    Name: Loop2

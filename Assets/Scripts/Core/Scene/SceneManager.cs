@@ -8,6 +8,7 @@ namespace Core.Scene
     {
         public void ChangeScene( Scene scene )
         {
+            
             if ( _sceneMappings.TryGetValue( scene, out var sceneName ) )
             {
                 UnityEngine.SceneManagement.SceneManager.LoadScene( sceneName );

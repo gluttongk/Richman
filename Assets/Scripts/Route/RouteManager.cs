@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Route
@@ -19,10 +20,10 @@ namespace Route
             position = _routePads[index].transform.position;
             return true;
         }
-     
+
         [SerializeField]
         private List<RoutePad> _routePads;
-        
+
         private void Awake()
         {
             AssignPads();
