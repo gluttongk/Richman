@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 33106887}
   - component: {fileID: 33106886}
   - component: {fileID: 33106885}
+  - component: {fileID: 33106884}
   m_Layer: 0
   m_Name: Pad
   m_TagString: Untagged
@@ -140,6 +141,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &33106884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33106883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a114881eda14d4ab5884157035d8fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &33106885
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -226,6 +239,7 @@ GameObject:
   - component: {fileID: 221204394}
   - component: {fileID: 221204393}
   - component: {fileID: 221204392}
+  - component: {fileID: 221204391}
   m_Layer: 0
   m_Name: Pad (3)
   m_TagString: Untagged
@@ -233,6 +247,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &221204391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221204390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a114881eda14d4ab5884157035d8fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &221204392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -319,6 +345,7 @@ GameObject:
   - component: {fileID: 248949842}
   - component: {fileID: 248949841}
   - component: {fileID: 248949840}
+  - component: {fileID: 248949839}
   m_Layer: 0
   m_Name: Pad (8)
   m_TagString: Untagged
@@ -326,6 +353,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &248949839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248949838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a114881eda14d4ab5884157035d8fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &248949840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -504,6 +543,7 @@ GameObject:
   - component: {fileID: 520299217}
   - component: {fileID: 520299216}
   - component: {fileID: 520299215}
+  - component: {fileID: 520299214}
   m_Layer: 0
   m_Name: Pad (5)
   m_TagString: Untagged
@@ -511,6 +551,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &520299214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520299213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a114881eda14d4ab5884157035d8fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &520299215
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -594,6 +646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 688938210}
+  - component: {fileID: 688938209}
   m_Layer: 0
   m_Name: Route
   m_TagString: Untagged
@@ -601,6 +654,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &688938209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688938208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5932dab1d0f74e06a4e31fa5bd827939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _routePads:
+  - {fileID: 33106884}
+  - {fileID: 1602074519}
+  - {fileID: 1721660854}
+  - {fileID: 2053526129}
+  - {fileID: 221204391}
+  - {fileID: 1600272464}
+  - {fileID: 520299214}
+  - {fileID: 1365040752}
+  - {fileID: 1005738628}
+  - {fileID: 248949839}
 --- !u!4 &688938210
 Transform:
   m_ObjectHideFlags: 0
@@ -717,6 +793,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 898781411}
+  - component: {fileID: 898781412}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -739,6 +816,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &898781412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898781410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79f83cb56c2649ebb68b41731fe1e2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &967716436
 GameObject:
   m_ObjectHideFlags: 0
@@ -845,6 +934,7 @@ GameObject:
   - component: {fileID: 1005738631}
   - component: {fileID: 1005738630}
   - component: {fileID: 1005738629}
+  - component: {fileID: 1005738628}
   m_Layer: 0
   m_Name: Pad (7)
   m_TagString: Untagged
@@ -852,6 +942,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1005738628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005738627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a114881eda14d4ab5884157035d8fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &1005738629
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -935,6 +1037,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1188315515}
+  - component: {fileID: 1188315514}
+  - component: {fileID: 1188315516}
   m_Layer: 0
   m_Name: SceneContext
   m_TagString: Untagged
@@ -942,6 +1046,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1188315514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188315513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30248807a3a4470aad86a165470fc965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _routeManager: {fileID: 688938209}
 --- !u!4 &1188315515
 Transform:
   m_ObjectHideFlags: 0
@@ -956,6 +1073,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188315516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188315513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89715ad69b973a14899afa2c6730b30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scriptableObjectInstallers: []
+  _monoInstallers:
+  - {fileID: 1188315514}
+  _installerPrefabs: []
+  _autoRun: 1
+  OnPreInstall:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPostInstall:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPreResolve:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPostResolve:
+    m_PersistentCalls:
+      m_Calls: []
+  _parentNewObjectsUnderSceneContext: 0
+  _contractNames: []
+  _parentContractNames: []
 --- !u!1 &1365040751
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,6 +1117,7 @@ GameObject:
   - component: {fileID: 1365040755}
   - component: {fileID: 1365040754}
   - component: {fileID: 1365040753}
+  - component: {fileID: 1365040752}
   m_Layer: 0
   m_Name: Pad (6)
   m_TagString: Untagged
@@ -975,6 +1125,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1365040752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365040751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a114881eda14d4ab5884157035d8fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &1365040753
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1061,6 +1223,7 @@ GameObject:
   - component: {fileID: 1600272467}
   - component: {fileID: 1600272466}
   - component: {fileID: 1600272465}
+  - component: {fileID: 1600272464}
   m_Layer: 0
   m_Name: Pad (4)
   m_TagString: Untagged
@@ -1068,6 +1231,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1600272464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600272463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a114881eda14d4ab5884157035d8fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &1600272465
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1154,6 +1329,7 @@ GameObject:
   - component: {fileID: 1602074522}
   - component: {fileID: 1602074521}
   - component: {fileID: 1602074520}
+  - component: {fileID: 1602074519}
   m_Layer: 0
   m_Name: Pad
   m_TagString: Untagged
@@ -1161,6 +1337,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1602074519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602074518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a114881eda14d4ab5884157035d8fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &1602074520
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1247,6 +1435,7 @@ GameObject:
   - component: {fileID: 1721660857}
   - component: {fileID: 1721660856}
   - component: {fileID: 1721660855}
+  - component: {fileID: 1721660854}
   m_Layer: 0
   m_Name: Pad (1)
   m_TagString: Untagged
@@ -1254,6 +1443,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1721660854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721660853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a114881eda14d4ab5884157035d8fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &1721660855
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1340,6 +1541,7 @@ GameObject:
   - component: {fileID: 2053526132}
   - component: {fileID: 2053526131}
   - component: {fileID: 2053526130}
+  - component: {fileID: 2053526129}
   m_Layer: 0
   m_Name: Pad (2)
   m_TagString: Untagged
@@ -1347,6 +1549,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2053526129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053526128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a114881eda14d4ab5884157035d8fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &2053526130
 BoxCollider:
   m_ObjectHideFlags: 0

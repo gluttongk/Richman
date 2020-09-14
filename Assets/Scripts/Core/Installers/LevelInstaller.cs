@@ -8,8 +8,12 @@ namespace Core.Installers
     {
         public override void InstallBindings()
         {
-           
+            Container.BindInterfacesTo<RouteManager>()
+                .FromInstance(_routeManager)
+                .AsSingle();
         }
-        
+
+        [SerializeField]
+        private RouteManager _routeManager;
     }
 }
